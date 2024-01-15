@@ -15,31 +15,31 @@ CREATE TABLE Products (
     --najem nzid hajet
 );
 
---  Reviews Table
-CREATE TABLE Reviews (
-    ReviewID INT PRIMARY KEY AUTO_INCREMENT,
-    UserID INT,
-    ProductID INT,
-    Rating INT,
-    Comment TEXT,
-    FOREIGN KEY (UserID) REFERENCES Users(UserID),
-    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
-);
+-- -- --  Reviews Table
+-- -- CREATE TABLE Reviews (
+-- --     ReviewID INT PRIMARY KEY AUTO_INCREMENT,
+-- --     UserID INT,
+-- --     ProductID INT,
+-- --     Rating INT,
+-- --     Comment TEXT,
+-- --     FOREIGN KEY (UserID) REFERENCES Users(UserID),
+-- --     FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+-- );
 
--- Create Promotions Table
-CREATE TABLE Promotions (
-    PromotionID INT PRIMARY KEY AUTO_INCREMENT,
-    PromoCode VARCHAR(20) NOT NULL,
-    Discount DECIMAL(5, 2) NOT NULL,
+-- -- -- Create Promotions Table
+-- -- CREATE TABLE Promotions (
+-- --     PromotionID INT PRIMARY KEY AUTO_INCREMENT,
+-- --     PromoCode VARCHAR(20) NOT NULL,
+-- --     Discount DECIMAL(5, 2) NOT NULL,
    
-);
+-- );
 
---  Shopping Methods Table
-CREATE TABLE ShoppingMethods (
-    MethodID INT PRIMARY KEY AUTO_INCREMENT,
-    MethodName VARCHAR(50) NOT NULL
+-- -- --  Shopping Methods Table
+-- -- CREATE TABLE ShoppingMethods (
+-- --     MethodID INT PRIMARY KEY AUTO_INCREMENT,
+-- --     MethodName VARCHAR(50) NOT NULL
     
-);
+-- );
 
 -- Create Payment Methods Table
 CREATE TABLE PaymentMethods (
