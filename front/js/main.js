@@ -400,3 +400,29 @@
             localStorage.setItem("heartDataNotify", iconElement.getAttribute("data-notify"));
         });
     });
+
+
+
+
+
+$(document).ready(function() {
+    // Set the number of items to show initially
+    var itemsToShow = 7;
+
+    // Store the initially hidden items
+    var hiddenItems = $('.item:gt(' + (itemsToShow - 1) + ')');
+    hiddenItems.each(function() {
+        $(this).hide();
+    });
+    // Handle "Show More" button click
+    $('#showMore').on('click', function() {
+        // Toggle the visibility of hidden items
+        hiddenItems.each(function() {
+            $(this).show();
+        });
+
+        // Hide the "Show More" button
+        $(this).hide();
+
+    });
+});
