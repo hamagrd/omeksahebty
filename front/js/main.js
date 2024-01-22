@@ -407,7 +407,7 @@
 
 $(document).ready(function() {
     // Set the number of items to show initially
-    var itemsToShow = 7;
+    var itemsToShow = 15;
 
     // Store the initially hidden items
     var hiddenItems = $('.item:gt(' + (itemsToShow - 1) + ')');
